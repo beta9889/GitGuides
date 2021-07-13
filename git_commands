@@ -1,3 +1,6 @@
+
+Main commands used in daily use
+
 git log:
 	shows all commits, includeds hashes merges
 
@@ -5,7 +8,7 @@ git add [file1,file2,... , fileX]:
 	adds the changes made to the cache allowing commit to take them.
 	eg: git add main.cpp	-> adds the file main into the cache ready for a commit.
 	
-	if there is a need to add all files use {git add *} which will add all files 
+	if there is a need to add all files use {git add *} which will add all files/changes 
 
 git commit [-option]:
 	places current cached changes into a commit,
@@ -22,12 +25,16 @@ git branch [-option] [branchName]
 	headless checkout will indicate the commit which is active
 	
 	can be used to create branch 
-		eg : git branch -c SecondBranch -> creates a branch named SecondBranch
-
+	eg : git branch -c SecondBranch -> creates a branch named SecondBranch
+		~ git branch
+		branch1
+		mainBranch
+		*CurrentlyActiveBranch
+	
+	
 git switch [branchName]
 	switches to a different branch 
-	quickest use to switch between branches.
-		
+	quickest use to switch between branches. 
 
 git checkout [commit]:
 	changes the main reference which is used for data.
@@ -37,6 +44,23 @@ git checkout [commit]:
 	eg: git checkout secondBranch 	-> changes to latest commit in secondBranch
 	git checkout 2af28332 		-> changes to commit with the specified hash
 	git checkout tag2		-> changes to commit with tag
+
+
+git merge [branch/commit]
+	merges the specified branches changes into the current 
+	eg:
+		~ git branch
+		main
+		A
+		*B
+		~ git merge A
+		adding changes in A into B making a commit with 2 parents
+
+git rebase [branch/commit]
+	
+
+------------------------------------------------------------------------------------------------------------------
+Good to have commands. generally pluming commands
 
 git cat-file [-option] [hash/commit]
 	shows the info in the file
