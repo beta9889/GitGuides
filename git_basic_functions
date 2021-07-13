@@ -1,54 +1,72 @@
 Git basic notes:
 
-git converts info into a SHA1 hash.
-the has will represent the information.
+Git converts info into a SHA1 hash.
+The has will represent the information.
 
-git can have commits, blobs and trees. 
+Git can have commits, blobs and trees. 
 
-blobs are the main data which the user has added, 
-	this can include code, documentation, etc
+Blobs are the main data which the user has added, 
+	This can include code, documentation, etc
 
-tree are a middleground connecting data. 
+Tree are a middleground connecting data. 
 
-	contain same information as commits,
- 		commit hash,
+	Contain same information as commits,
+ 		Commit hash,
 		Author name, Author email (whoever created the commit)
 		Date of the commit
-		commit message
+		Commit message
 		
-	work similar to directories/file folders
-	have same info as a commit. 
+	Work similar to directories/file folders
+	Have same info as a commit. 
 
 
 
-commits are a hash which shows the info which is was active when it was made
-	a subtype of tree. 
-	commits can contain parents to previous commits.
-	parent commits/hashes will contain another commit which has additional info.
-	info which is unchanged will be copied from parent.
+Commits are a hash which shows the info which is was active when it was made
+	A subtype of tree. 
+	Commits can contain parents to previous commits.
+	Parent commits/hashes will contain another commit which has additional info.
+	Info which is unchanged will be copied from parent.
 	
 
 If there are previous commits it will also contain a parent tree:
 
-parent trees will indicate additional data which the next data contains. 
-	parent directories work in a similar way and same principle 
-	where the date is currently saved.
+Parent trees will indicate additional data which the next data contains. 
+	Parent directories work in a similar way and same principle 
+	Where the date is currently saved.
 
-branches are commit with where the history/parent tree are different.
-	branches can be merged to combine two different histories  
+Branches are commit with where the history/parent tree are different.
+	Branches can be merged to combine two different histories  
 
 eg: main -> secondCommit -> extraCommit -> preMerge \
 	\					     >	Post Merge, contains two parent trees. 
 	 >Branch->someInfo->something->beforeMerge  /
 
-	these branches will have different histories and the merge will have two different parents trees
+	These branches will have different histories and the merge will have two different parents trees
 	
 	The main branch will have secondCommit, extra commit and preMerge before being combined
-	meanwhile Branch will have someInfo, something and beforeMerge.
+	Meanwhile Branch will have someInfo, something and beforeMerge.
 	
-	these branches will have seperate histories and these histories will combine during the merge.
-	the merge will have two parents which are the latest commits of each branch
+	These branches will have seperate histories and these histories will combine during the merge.
+	The merge will have two parents which are the latest commits of each branch
 
 Merges are best used to allow for clear history to be displayed in logs and history
+
+Rebases are possble, however if repository is shared avoid it at  all cost
+
+Rebase changes where the history starts and will change the divergin paths to be a new base.
+
+eg: 	main -> change->commit
+     	\
+    	 >Branch ->news->infoB
+
+	If Branch is rebased into main it will change the history into
+	
+	main -> change-> commit -> Branch ->news -> infoB
+
+The history is changed and will not show how the actual divergence worked. 
+
+This can be best used when a branch is made for testing solutions or quick bursts.
+if the repository is shared or synced (eg github) DO NOT USE REBASES
+
 
 
