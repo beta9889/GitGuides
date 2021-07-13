@@ -1,0 +1,33 @@
+Git basic notes:
+
+git converts info into a SHA1 hash.
+the has will represent the information.
+
+git can have commits, blobs and trees. 
+
+blobs are the main data which the user has added, 
+	this can include code, documentation, etc
+
+tree are a middleground connecting data. 
+
+	contain same information as commits,
+ 		commit hash,
+		Author name, Author email (whoever created the commit)
+		Date of the commit
+		commit message
+		
+	work similar to directories/file folders
+	have same info as a commit. 
+
+
+
+commits are a hash which shows the info which is was active when it was made
+	a subtype of tree. 
+	commits can contain parents to previous commits.
+	parent commits/hashes will contain:
+
+If there are previous commits it will also contain a parent tree:
+
+parent trees will indicate additional data which the next data contains. 
+	parent directories work in a similar way and same principle 
+	where the date is currently saved.
