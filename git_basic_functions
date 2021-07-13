@@ -31,3 +31,13 @@ If there are previous commits it will also contain a parent tree:
 parent trees will indicate additional data which the next data contains. 
 	parent directories work in a similar way and same principle 
 	where the date is currently saved.
+
+branches are commit with where the history/parent tree are different.
+	branches can be merged to combine two different histories  
+
+eg: main -> secondCommit -> extra commit -> preMerge \
+	\					      >	Post Merge, contains two parent trees. 
+	 >Branch -> some info->something->Postmerge  /
+
+
+	
