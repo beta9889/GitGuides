@@ -39,7 +39,7 @@ Branches are commit with where the history/parent tree are different.
 
 eg: main -> secondCommit -> extraCommit -> preMerge \
 	\					     >	Post Merge, contains two parent trees. 
-	 >Branch->someInfo->something->beforeMerge  /
+	 >branch->someInfo->something->beforeMerge  /
 
 	These branches will have different histories and the merge will have two different parents trees
 	
@@ -49,7 +49,14 @@ eg: main -> secondCommit -> extraCommit -> preMerge \
 	These branches will have seperate histories and these histories will combine during the merge.
 	The merge will have two parents which are the latest commits of each branch
 
+	Merges have to have the same base/start at a certain point to allow for a merge. 
+	If there are too many differences in the history between the branches the merge will fail. 
+	
+
 Merges are best used to allow for clear history to be displayed in logs and history
+
+
+
 
 Rebases are possble, however if repository is shared avoid it at  all cost
 
@@ -63,10 +70,28 @@ eg: 	main -> change->commit
 	
 	main -> change-> commit -> Branch ->news -> infoB
 
-The history is changed and will not show how the actual divergence worked. 
+	The history is changed and will not show how the actual divergence worked. 
 
-This can be best used when a branch is made for testing solutions or quick bursts.
-if the repository is shared or synced (eg github) DO NOT USE REBASES
+	This can be best used when a branch is made for testing solutions or quick bursts.
+	If the repository is shared or synced (eg github) DO NOT USE REBASES
 
+
+git can be used to syncronize with other respositories.
+Adding a remote repository allow different people to work on the same project.
+to allow for the same history and thereby allow syncing without causing issues. 
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+git can be used to syncronice different repositories. 
+Different repositories will be only local until it is actively syncronized. 
+
+firstly one or multible remote repository has to be added. 
+The remote repositories will contain a url and a fetch.
+fetch is a refernce to the which branches will be syncronized between 
+
+multible remotes can be specified
+	best practice is to use origin for the main one.
 
 
