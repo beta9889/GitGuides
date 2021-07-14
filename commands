@@ -1,6 +1,10 @@
 
 Main commands used in daily use
 
+git init
+	initalizes a empty repository
+	adds a .git directory with all files required. 
+
 git log [-option]:
 	shows all commits, includeds hashes merges
 	for quick check add the optino --oneline
@@ -59,11 +63,6 @@ git merge [branch/commit]
 		~ git merge A
 		adding changes in A into B making a commit with 2 parents
 
-git rebase [branch/commit]
-	changes the parent tree of the origin of the branch 
-	Makes the history seems like the branch is just appended on the other one.
-	better to use merge if possible.
-
 git diff [branch1] [branch2]
 	compares the two different branches and shows the differences
 	will assume branch1 is base and show branch2 as changes. 
@@ -76,6 +75,15 @@ git merge-base [branch1] [branch2]
 git push 
 	syncronized the local repository to the remote repository.
 	adds changes in local to remote. 
+
+
+	----------DO NOT USE IF REMOTE REPOSITORY IS ACTIVE ------------------ 
+git rebase [branch/commit]
+	changes the parent tree of the origin of the branch 
+	Makes the history seems like the branch is just appended on the other one.
+	better to use merge if possible.
+
+
 
 ------------------------------------------------------------------------------------------------------------------
 Good to have commands. generally pluming commands
