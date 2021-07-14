@@ -1,0 +1,34 @@
+533dd71 HEAD@{0}: commit: removed git_basic_functions and git_commands
+260bc89 HEAD@{1}: checkout: moving from main to based
+2120df7 HEAD@{2}: pull --all: Fast-forward
+a69f51d HEAD@{3}: checkout: moving from 2120df7c288642506ffa95c951fbb7f6897c87c8 to main
+2120df7 HEAD@{4}: checkout: moving from main to origin/main
+a69f51d HEAD@{5}: checkout: moving from basics to main
+0beaa59 HEAD@{6}: commit: started on distrubuted repository, cloud repository
+a69f51d HEAD@{7}: checkout: moving from main to basics
+a69f51d HEAD@{8}: checkout: moving from basics to main
+a69f51d HEAD@{9}: merge main: Fast-forward
+ad086c5 HEAD@{10}: checkout: moving from main to basics
+a69f51d HEAD@{11}: checkout: moving from basics to main
+ad086c5 HEAD@{12}: checkout: moving from commands to basics
+a69f51d HEAD@{13}: merge main: Fast-forward
+bb058c6 HEAD@{14}: checkout: moving from main to commands
+a69f51d HEAD@{15}: checkout: moving from commands to main
+bb058c6 HEAD@{16}: checkout: moving from main to commands
+a69f51d HEAD@{17}: checkout: moving from basics to main
+ad086c5 HEAD@{18}: checkout: moving from main to basics
+a69f51d HEAD@{19}: merge commands: Merge made by the 'recursive' strategy.
+ad086c5 HEAD@{20}: checkout: moving from basics to main
+ad086c5 HEAD@{21}: checkout: moving from 5d94e6dcb904b529f38767be0dbcf61e5c67b518 to basics
+5d94e6d HEAD@{22}: checkout: moving from basics to 5d94e6dcb
+ad086c5 HEAD@{23}: checkout: moving from main to basics
+ad086c5 HEAD@{24}: merge basics: Fast-forward
+5c7788e HEAD@{25}: checkout: moving from basics to main
+ad086c5 HEAD@{26}: commit: finished explanation of megers and rebases
+5d94e6d HEAD@{27}: commit: added more detailed explanation to git_basic_functionality
+5c7788e HEAD@{28}: checkout: moving from main to basics
+5c7788e HEAD@{29}: checkout: moving from commands to main
+bb058c6 HEAD@{30}: commit: added merge info
+5c7788e HEAD@{31}: checkout: moving from main to commands
+5c7788e HEAD@{32}: commit: start explainging branches
+df4dd96 HEAD@{33}: clone: from https://github.com/beta9889/git_test.git
