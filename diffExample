@@ -1,0 +1,40 @@
+example of command "git diff diffCheck main ":
+
+
+diff --git a/commands b/commands
+index b6df5b1..046a2cf 100755
+--- a/commands
++++ b/commands
+@@ -59,8 +59,15 @@ git merge [branch/commit]
+ git rebase [branch/commit]
+ 	changes the parent tree of the origin of the branch 
+ 	Makes the history seems like the branch is just appended on the other one.
++	better to use merge if possible.
++
++git diff [branch1] [branch2]
++	compares the two different branches and shows the differences
+ 	
+ 
++git push 
++	syncronized the local repository to the 
++
+ ------------------------------------------------------------------------------------------------------------------
+ Good to have commands. generally pluming commands
+ 
+diff --git a/pluralsight b/pluralsight
+new file mode 100644
+index 0000000..dcb8767
+--- /dev/null
++++ b/pluralsight
+@@ -0,0 +1,11 @@
++
++git notes
++
++-- no assignments/worksheets during training
++
++++ plan and courses order already specified
++
++++ can test knowledge allowing for skipping courses.
++
++** best used in combination with own projects/assignments. 
++
