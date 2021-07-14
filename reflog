@@ -1,0 +1,43 @@
+023db76 HEAD@{0}: checkout: moving from metaNotes to main
+7f49795 HEAD@{1}: commit: no written guides
+9a09026 HEAD@{2}: checkout: moving from commands to metaNotes
+278a484 HEAD@{3}: commit: added extra stuff
+20fd711 HEAD@{4}: commit: more options explained for push
+40f8b1b HEAD@{5}: checkout: moving from metaNotes to commands
+9a09026 HEAD@{6}: Branch: renamed refs/heads/pluralsight to refs/heads/metaNotes
+9a09026 HEAD@{8}: merge main: Merge made by the 'recursive' strategy.
+89b6757 HEAD@{9}: checkout: moving from diffCheck to pluralsight
+fc37a6e HEAD@{10}: checkout: moving from commands to diffCheck
+40f8b1b HEAD@{11}: checkout: moving from based to commands
+260bc89 HEAD@{12}: Branch: renamed refs/heads/rebase to refs/heads/based
+260bc89 HEAD@{14}: commit: little more info about rebase
+6959d0e HEAD@{15}: commit: updated example log
+40f8b1b HEAD@{16}: checkout: moving from commands to rebase
+40f8b1b HEAD@{17}: checkout: moving from pluralsight to commands
+89b6757 HEAD@{18}: commit: additional notes
+f70e655 HEAD@{19}: checkout: moving from f70e655c67084689c23734df9f0451ccea95ccb8 to pluralsight
+f70e655 HEAD@{20}: checkout: moving from commands to f70e655
+40f8b1b HEAD@{21}: checkout: moving from ad086c548db7366b1529b3d49d675f3130f98be7 to commands
+ad086c5 HEAD@{22}: checkout: moving from commands to ad086c5
+40f8b1b HEAD@{23}: checkout: moving from df4dd96af6a0162037fd71e72709552b25551f01 to commands
+df4dd96 HEAD@{24}: checkout: moving from commands to df4dd96
+40f8b1b HEAD@{25}: commit: added git init into commands
+023db76 HEAD@{26}: checkout: moving from main to commands
+023db76 HEAD@{27}: commit: added some more info about diff, branches etc,
+b8ad4d1 HEAD@{28}: commit: pluralsight stuff
+f70e655 HEAD@{29}: commit: started on pluralsight notes/summary
+32658a0 HEAD@{30}: checkout: moving from diffCheck to main
+fc37a6e HEAD@{31}: checkout: moving from main to diffCheck
+32658a0 HEAD@{32}: commit: started on push in commands
+fc37a6e HEAD@{33}: merge rebase: Fast-forward
+a69f51d HEAD@{34}: checkout: moving from rebase to main
+fc37a6e HEAD@{35}: checkout: moving from main to rebase
+a69f51d HEAD@{36}: checkout: moving from rebase to main
+fc37a6e HEAD@{37}: commit: added example of git log into seperate file
+a69f51d HEAD@{38}: checkout: moving from main to rebase
+a69f51d HEAD@{39}: checkout: moving from c2c4da2be19207abc8d138334ff0a6cf2e97693f to main
+c2c4da2 HEAD@{40}: commit: added upstream
+0beaa59 HEAD@{41}: checkout: moving from main to origin/basics
+a69f51d HEAD@{42}: pull: Fast-forward
+df4dd96 HEAD@{43}: Branch: renamed refs/heads/main to refs/heads/main
+df4dd96 HEAD@{45}: commit (initial): inital commit
