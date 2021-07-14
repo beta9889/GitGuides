@@ -1,8 +1,11 @@
 
 Main commands used in daily use
 
-git log:
+git log [-option]:
 	shows all commits, includeds hashes merges
+	for quick check add the optino --oneline
+		makes each entry only contain one line in terminal 
+
 
 git add [file1,file2,... , fileX]:
 	adds the changes made to the cache allowing commit to take them.
@@ -63,10 +66,16 @@ git rebase [branch/commit]
 
 git diff [branch1] [branch2]
 	compares the two different branches and shows the differences
-	
+	will assume branch1 is base and show branch2 as changes. 
+		
+
+git merge-base [branch1] [branch2]
+	shows where branch1 diverges from branch2
+	only shows SHA1 hash, compare with git log to find commit 
 
 git push 
-	syncronized the local repository to the 
+	syncronized the local repository to the remote repository.
+	adds changes in local to remote. 
 
 ------------------------------------------------------------------------------------------------------------------
 Good to have commands. generally pluming commands
