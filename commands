@@ -92,7 +92,7 @@ git push [-option]
 	[REMOTE] '*:*'				pushes all branches and tags. 
 	--set-upstream [REMOTE] [branchName]	adds and pushes current branch (used first time push)
 
-------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------Extra Info----------------------------------------------------------
 Good to have commands. generally pluming commands
 
 git cat-file [-option] [hash/commit]
