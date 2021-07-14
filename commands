@@ -59,7 +59,14 @@ git merge [branch/commit]
 git rebase [branch/commit]
 	changes the parent tree of the origin of the branch 
 	Makes the history seems like the branch is just appended on the other one.
+	better to use merge if possible.
+
+git diff [branch1] [branch2]
+	compares the two different branches and shows the differences
 	
+
+git push 
+	syncronized the local repository to the 
 
 ------------------------------------------------------------------------------------------------------------------
 Good to have commands. generally pluming commands
