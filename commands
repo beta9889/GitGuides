@@ -70,7 +70,7 @@ git diff [branch1] [branch2]
 git cherry-pick [commit/hash]
 	Adds a specific commit at the end of the current branch
 	makes a copy of the commit specified and places it in the position of the current branch
-	eg of branch structure: 
+	eg: original branch structure: 
 	
 	a - b - c - d	main
 	\
@@ -79,6 +79,14 @@ git cherry-pick [commit/hash]
 	~ git switch main
 	switching to main branch
 	~git cherry-pick f
+	added f to main	
+
+
+	final branch structure:
+
+	a - b - c - d - f	main
+	\
+	 e - f - g		temp
 	
 	
 	
