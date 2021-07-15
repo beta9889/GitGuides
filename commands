@@ -1,5 +1,5 @@
 
-Main commands used in daily use
+Main commands used
 
 git init
 	initalizes a empty repository
@@ -66,8 +66,22 @@ git merge [branch/commit]
 git diff [branch1] [branch2]
 	compares the two different branches and shows the differences
 	will assume branch1 is base and show branch2 as changes. 
-		
 
+git cherry-pick [commit/hash]
+	Adds a specific commit at the end of the current branch
+	makes a copy of the commit specified and places it in the position of the current branch
+	eg of branch structure: 
+	
+	a - b - c - d	main
+	\
+	 e - f - g	temp
+
+	~ git switch main
+	switching to main branch
+	~git cherry-pick f
+	
+	
+	
 git merge-base [branch1] [branch2]
 	shows where branch1 diverges from branch2
 	only shows SHA1 hash, compare with git log to find commit 
