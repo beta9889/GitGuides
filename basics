@@ -53,6 +53,29 @@ Merges are best used to allow for clear history to be displayed in logs and hist
 
 Rebases are possble, however if repository is shared avoid it at  all cost
 
+Cherry-pick 
+	method which allows for individual commits to be appended at the end of the branch
+	it makes a copy of the commit speicifed. 
+	eg:
+	
+	before cherry pick
+	
+	- a - b - c - d		main
+	   \
+	    e - f 		second
+
+	~ git switch main
+	~ git cherry-pick e 
+
+	after cherry pick
+	- a - b - c - d - e	main
+	   \
+	    e - f		second
+
+	The commit specified has been appended to the current active branch allowing for continuation on the commit.
+	best use is for situations 
+
+
 Rebase changes where the history starts and will change the divergin paths to be a new base.
 
 eg: 	main -> change->commit
@@ -66,6 +89,8 @@ eg: 	main -> change->commit
 The history is changed and will not show how the actual divergence worked. 
 
 This can be best used when a branch is made for testing solutions or quick bursts.
+this can also be used for cleaning up multible commits into a single commit
+	easier to read log and view everything
 if the repository is shared or synced (eg github) DO NOT USE REBASES
 
 
