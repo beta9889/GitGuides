@@ -1,5 +1,5 @@
 
-Main commands used in daily use
+Main commands used
 
 git init
 	initalizes a empty repository
@@ -66,15 +66,33 @@ git merge [branch/commit]
 git diff [branch1] [branch2]
 	compares the two different branches and shows the differences
 	will assume branch1 is base and show branch2 as changes. 
-		
 
+git cherry-pick [commit/hash]
+	Adds a specific commit at the end of the current branch
+	makes a copy of the commit specified and places it in the position of the current branch
+	eg: original branch structure: 
+	
+	a - b - c - d	main
+	\
+	 e - f - g	temp
+
+	~ git switch main
+	switching to main branch
+	~git cherry-pick f
+	added f to main	
+
+
+	final branch structure:
+
+	a - b - c - d - f	main
+	\
+	 e - f - g		temp
+	
+	
+	
 git merge-base [branch1] [branch2]
 	shows where branch1 diverges from branch2
 	only shows SHA1 hash, compare with git log to find commit 
-
-git push 
-	syncronized the local repository to the remote repository.
-	adds changes in local to remote. 
 
 
 	----------DO NOT USE IF REMOTE REPOSITORY IS ACTIVE ------------------ 
@@ -82,10 +100,21 @@ git rebase [branch/commit]
 	changes the parent tree of the origin of the branch 
 	Makes the history seems like the branch is just appended on the other one.
 	better to use merge if possible.
+-----------------------------------------------------Remote----------------------------------------------------
 
 
+git push [-option] 
+	syncronized the local repository to the remote repository.
+	adds changes in local to remote. 
+	
+	by default will only push the current branch.
 
-------------------------------------------------------------------------------------------------------------------
+	options:	[REMOTE] == name of the remote repository 
+	[REMOTE] --all				pushes all branches
+	[REMOTE] '*:*'				pushes all branches and tags. 
+	--set-upstream [REMOTE] [branchName]	adds and pushes current branch (used first time push)
+
+---------------------------------------------------Extra Info----------------------------------------------------------
 Good to have commands. generally pluming commands
 
 git cat-file [-option] [hash/commit]
